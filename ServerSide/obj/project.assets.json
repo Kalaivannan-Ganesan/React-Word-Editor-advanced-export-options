@@ -1,0 +1,1201 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "BitMiracle.LibTiff.NET/2.4.649": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "HarfBuzzSharp/8.3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "8.3.0.1",
+          "HarfBuzzSharp.NativeAssets.macOS": "8.3.0.1"
+        },
+        "compile": {
+          "lib/net8.0/HarfBuzzSharp.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/HarfBuzzSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/8.3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/8.3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.JsonPatch/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "8.0.10",
+          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp/3.116.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.116.1",
+          "SkiaSharp.NativeAssets.macOS": "3.116.1"
+        },
+        "compile": {
+          "ref/net8.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/3.116.1": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "8.3.0.1",
+          "SkiaSharp": "3.116.1"
+        },
+        "compile": {
+          "lib/net8.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/3.116.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.116.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Syncfusion.Compression.Net.Core/31.1.23": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.DocIO.Net.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "31.1.23",
+          "Syncfusion.Licensing": "31.1.23",
+          "Syncfusion.Markdown": "31.1.23",
+          "Syncfusion.OfficeChart.Net.Core": "31.1.23",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.DocIO.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.DocIO.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.DocIORenderer.Net.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.HarfBuzz": "3.116.1",
+          "Syncfusion.Compression.Net.Core": "31.1.23",
+          "Syncfusion.DocIO.Net.Core": "31.1.23",
+          "Syncfusion.MetafileRenderer.Net.Core": "31.1.23",
+          "Syncfusion.OfficeChart.Net.Core": "31.1.23",
+          "Syncfusion.Pdf.Imaging.Net.Core": "31.1.23",
+          "Syncfusion.Pdf.Net.Core": "31.1.23",
+          "Syncfusion.SkiaSharpHelper.Net.Core": "31.1.23"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.DocIORenderer.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.DocIORenderer.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.EJ2.WordEditor.AspNet.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2",
+          "Syncfusion.Compression.Net.Core": "31.1.23",
+          "Syncfusion.DocIO.Net.Core": "31.1.23",
+          "Syncfusion.OfficeChart.Net.Core": "31.1.23"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.EJ2.DocumentEditor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.EJ2.DocumentEditor.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/31.1.23": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Markdown/31.1.23": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Markdown.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Markdown.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.MetafileRenderer.Net.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "3.116.1",
+          "Syncfusion.Compression.Net.Core": "31.1.23",
+          "Syncfusion.Licensing": "31.1.23",
+          "Syncfusion.Pdf.Net.Core": "31.1.23"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.MetafileRenderer.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.MetafileRenderer.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.OfficeChart.Net.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "31.1.23"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.OfficeChart.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.OfficeChart.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Pdf.Imaging.Net.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "BitMiracle.LibTiff.NET": "2.4.649",
+          "SkiaSharp": "3.116.1",
+          "Syncfusion.Compression.Net.Core": "31.1.23",
+          "Syncfusion.Pdf.Net.Core": "31.1.23"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.Pdf.Imaging.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Pdf.Imaging.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Pdf.Net.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "31.1.23",
+          "Syncfusion.Licensing": "31.1.23",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.Pdf.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Pdf.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SkiaSharpHelper.Net.Core/31.1.23": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.HarfBuzz": "3.116.1",
+          "Syncfusion.Compression.Net.Core": "31.1.23"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.SkiaSharpHelper.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.SkiaSharpHelper.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Text.Encoding.CodePages/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BitMiracle.LibTiff.NET/2.4.649": {
+      "sha512": "XCEdfCphKo0UAvSg1h/OzOFWtjkIGnPMAziYkNqV7NVrqb/tZJTBxJhxIEX7gpvQwg8GIRYt133SUncfkKfjLA==",
+      "type": "package",
+      "path": "bitmiracle.libtiff.net/2.4.649",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
+        "bitmiracle.libtiff.net.nuspec",
+        "lib/net40/BitMiracle.LibTiff.NET.dll",
+        "lib/net40/BitMiracle.LibTiff.NET.xml",
+        "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll",
+        "lib/netstandard2.0/BitMiracle.LibTiff.NET.xml"
+      ]
+    },
+    "HarfBuzzSharp/8.3.0.1": {
+      "sha512": "rwLpl+W6uqu0DuvzqNhTMuFcXfy1Vc0uq0YXgPEmtTSfeUSAye1FcARrm2YIPOSiCBwBOGu3cLvMX5Fp6OKe2g==",
+      "type": "package",
+      "path": "harfbuzzsharp/8.3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "harfbuzzsharp.8.3.0.1.nupkg.sha512",
+        "harfbuzzsharp.nuspec",
+        "icon.png",
+        "lib/net462/HarfBuzzSharp.dll",
+        "lib/net462/HarfBuzzSharp.pdb",
+        "lib/net6.0/HarfBuzzSharp.dll",
+        "lib/net6.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-android34.0/HarfBuzzSharp.dll",
+        "lib/net8.0-android34.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-android34.0/HarfBuzzSharp.xml",
+        "lib/net8.0-ios17.0/HarfBuzzSharp.dll",
+        "lib/net8.0-ios17.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-maccatalyst17.0/HarfBuzzSharp.dll",
+        "lib/net8.0-maccatalyst17.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-macos14.0/HarfBuzzSharp.dll",
+        "lib/net8.0-macos14.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-tizen7.0/HarfBuzzSharp.dll",
+        "lib/net8.0-tizen7.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-tvos17.0/HarfBuzzSharp.dll",
+        "lib/net8.0-tvos17.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-windows10.0.19041/HarfBuzzSharp.dll",
+        "lib/net8.0-windows10.0.19041/HarfBuzzSharp.pdb",
+        "lib/net8.0/HarfBuzzSharp.dll",
+        "lib/net8.0/HarfBuzzSharp.pdb",
+        "lib/netstandard2.0/HarfBuzzSharp.dll",
+        "lib/netstandard2.0/HarfBuzzSharp.pdb",
+        "lib/netstandard2.1/HarfBuzzSharp.dll",
+        "lib/netstandard2.1/HarfBuzzSharp.pdb"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.macOS/8.3.0.1": {
+      "sha512": "2o6U05LAmK+rwX7TvmJ2X0anXJG2hSE7kHVmCshhHy0tKfByJ5ykBacvhmmooHchlOwq15KBZeROGafCT8nN+g==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.macos/8.3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net8.0-macos14.0/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "harfbuzzsharp.nativeassets.macos.8.3.0.1.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.macos.nuspec",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-macos14.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/osx/native/libHarfBuzzSharp.dylib"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.Win32/8.3.0.1": {
+      "sha512": "ow0DtGEUjo65qhiI22of7qiVbN1xDFsZ5P5xJljRmGZ5WSxNy+1batLNJFGxahqhB1MTHYV8kAXf0GqC8WaevQ==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.win32/8.3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
+        "harfbuzzsharp.nativeassets.win32.8.3.0.1.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.win32.nuspec",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows10.0.19041/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-windows10.0.19041/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/win-arm64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x86/native/libHarfBuzzSharp.dll"
+      ]
+    },
+    "Microsoft.AspNetCore.JsonPatch/8.0.10": {
+      "sha512": "pLEDpobrApzc+9IgnlwMfWHfVaOWdNlBFgfggxFgMw57sn/iTkPMwc8eaufcKcLyCCNZQ1r6GRLsIIzUMtH8eg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/8.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net462/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/net8.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net8.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "microsoft.aspnetcore.jsonpatch.8.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.10": {
+      "sha512": "2DIFj+w15yFIQbh4AgQQC8m0UJfhiF20s3h/DlTyiPGgNfijZ9TxqauYqaj81hF5Pc9wUg9agvxlH+4eUFjoRg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/8.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.8.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "SkiaSharp/3.116.1": {
+      "sha512": "DNDwbRjP+aMo27dV2h/uHCVTcWubWWxHnPLiePNyl24f4Pv43mQ8AQQeseOrKR+J3AOCEs6t0sUjo0aa3j3RWQ==",
+      "type": "package",
+      "path": "skiasharp/3.116.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.dll",
+        "lib/net8.0-android34.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.xml",
+        "lib/net8.0-ios17.0/SkiaSharp.dll",
+        "lib/net8.0-ios17.0/SkiaSharp.pdb",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.pdb",
+        "lib/net8.0-macos14.0/SkiaSharp.dll",
+        "lib/net8.0-macos14.0/SkiaSharp.pdb",
+        "lib/net8.0-tizen7.0/SkiaSharp.dll",
+        "lib/net8.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net8.0-tvos17.0/SkiaSharp.dll",
+        "lib/net8.0-tvos17.0/SkiaSharp.pdb",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.pdb",
+        "lib/net8.0/SkiaSharp.dll",
+        "lib/net8.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "ref/net462/SkiaSharp.dll",
+        "ref/net6.0/SkiaSharp.dll",
+        "ref/net8.0-android34.0/SkiaSharp.dll",
+        "ref/net8.0-ios17.0/SkiaSharp.dll",
+        "ref/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "ref/net8.0-macos14.0/SkiaSharp.dll",
+        "ref/net8.0-tizen7.0/SkiaSharp.dll",
+        "ref/net8.0-tvos17.0/SkiaSharp.dll",
+        "ref/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "ref/net8.0/SkiaSharp.dll",
+        "ref/netstandard2.0/SkiaSharp.dll",
+        "ref/netstandard2.1/SkiaSharp.dll",
+        "skiasharp.3.116.1.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.HarfBuzz/3.116.1": {
+      "sha512": "ibDG1+quN86vBd9ztjDAC9wnvS1nRZ6ydTUOSod4NsRHWdLLGzWYn1IOF4Cg9iJh5cQHdpzhUZBQE0JMKznrow==",
+      "type": "package",
+      "path": "skiasharp.harfbuzz/3.116.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "lib/net462/SkiaSharp.HarfBuzz.dll",
+        "lib/net462/SkiaSharp.HarfBuzz.pdb",
+        "lib/net6.0/SkiaSharp.HarfBuzz.dll",
+        "lib/net6.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/net8.0/SkiaSharp.HarfBuzz.dll",
+        "lib/net8.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.pdb",
+        "skiasharp.harfbuzz.3.116.1.nupkg.sha512",
+        "skiasharp.harfbuzz.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.macOS/3.116.1": {
+      "sha512": "3KPvpKysDmEMt0NnAZPX5U6KFk0LmG/72/IjAIJemIksIZ0Tjs9pGpr3L+zboVCv1MLVoJLKl3nJDXUG6Jda6A==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.macos/3.116.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net8.0-macos14.0/SkiaSharp.NativeAssets.macOS.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-macos14.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "skiasharp.nativeassets.macos.3.116.1.nupkg.sha512",
+        "skiasharp.nativeassets.macos.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Win32/3.116.1": {
+      "sha512": "dRQ75MCI8oz6zAs2Y1w6pq6ARs4MhdNG+gf3doOxOxdnueDXffQLGQIxON54GDoxc0WjKOoHMKBR4DhaduwwQw==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.win32/3.116.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows10.0.19041/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-windows10.0.19041/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "skiasharp.nativeassets.win32.3.116.1.nupkg.sha512",
+        "skiasharp.nativeassets.win32.nuspec"
+      ]
+    },
+    "Syncfusion.Compression.Net.Core/31.1.23": {
+      "sha512": "gjtVnvaEX1RD5qE3h6lOtvAk2alkzAbRA2HZFOw9DO0GnLyyO3+VHFmOdU/odcZDV3cARSe7+OGukyrj03n5Gg==",
+      "type": "package",
+      "path": "syncfusion.compression.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net8.0/Syncfusion.Compression.Portable.dll",
+        "lib/net8.0/Syncfusion.Compression.Portable.xml",
+        "lib/net9.0/Syncfusion.Compression.Portable.dll",
+        "lib/net9.0/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.xml",
+        "syncfusion.compression.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.compression.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.DocIO.Net.Core/31.1.23": {
+      "sha512": "oNpnzATrrtQanfSXVRx+rVj/M4pwzBPK/TGj8fZXK8rlTUahj/5WVndvNQvhFW1w/j/WSJ5aGYUPGfQ0+0CWFQ==",
+      "type": "package",
+      "path": "syncfusion.docio.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0/Syncfusion.DocIO.Portable.dll",
+        "lib/net8.0/Syncfusion.DocIO.Portable.xml",
+        "lib/net9.0/Syncfusion.DocIO.Portable.dll",
+        "lib/net9.0/Syncfusion.DocIO.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.DocIO.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.DocIO.Portable.xml",
+        "syncfusion.docio.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.docio.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.DocIORenderer.Net.Core/31.1.23": {
+      "sha512": "enI+jgl4PwFGxTCduDcZnnhpOEHgNqvKW5nbNzg+sFVM/6yMKj6e/6+dcIwPl1KGp6uLg1X58NdbE1LP8a9yDA==",
+      "type": "package",
+      "path": "syncfusion.dociorenderer.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0/Syncfusion.DocIORenderer.Portable.dll",
+        "lib/net8.0/Syncfusion.DocIORenderer.Portable.xml",
+        "lib/net9.0/Syncfusion.DocIORenderer.Portable.dll",
+        "lib/net9.0/Syncfusion.DocIORenderer.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.DocIORenderer.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.DocIORenderer.Portable.xml",
+        "syncfusion.dociorenderer.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.dociorenderer.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.EJ2.WordEditor.AspNet.Core/31.1.23": {
+      "sha512": "VhdV3SzWI3uITIw2k31m/q3VzpX60NWMZ5ln4z+IoP4k94u0XrEXPEDKSP/xfuNTbh44GoMC6FBj5V1vJQ1k9A==",
+      "type": "package",
+      "path": "syncfusion.ej2.wordeditor.aspnet.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0/Syncfusion.EJ2.DocumentEditor.dll",
+        "lib/net8.0/Syncfusion.EJ2.DocumentEditor.xml",
+        "lib/net9.0/Syncfusion.EJ2.DocumentEditor.dll",
+        "lib/net9.0/Syncfusion.EJ2.DocumentEditor.xml",
+        "lib/netstandard2.0/Syncfusion.EJ2.DocumentEditor.dll",
+        "lib/netstandard2.0/Syncfusion.EJ2.DocumentEditor.xml",
+        "syncfusion.ej2.wordeditor.aspnet.core.31.1.23.nupkg.sha512",
+        "syncfusion.ej2.wordeditor.aspnet.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Licensing/31.1.23": {
+      "sha512": "UVUE+hgGyEwHdjumFjg2hoJU1G5dZXre0CYfC90q8ML5IBfjEuI22qSSlkin5Hd7QavFJ20JGVviqweNfDOjBg==",
+      "type": "package",
+      "path": "syncfusion.licensing/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net462/Syncfusion.Licensing.dll",
+        "lib/net8.0/Syncfusion.Licensing.dll",
+        "lib/net9.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.31.1.23.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Markdown/31.1.23": {
+      "sha512": "NfrFT5G6twes9/uj+m28Vbu4fBzsrzP2QJLGvtnq06vjDqhWywfkOQWwmDHOf/f+M+pXmpnguKMdcjZ2ztNiUQ==",
+      "type": "package",
+      "path": "syncfusion.markdown/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net462/Syncfusion.Markdown.dll",
+        "lib/net462/Syncfusion.Markdown.xml",
+        "lib/net8.0-windows7.0/Syncfusion.Markdown.dll",
+        "lib/net8.0-windows7.0/Syncfusion.Markdown.xml",
+        "lib/net8.0/Syncfusion.Markdown.dll",
+        "lib/net8.0/Syncfusion.Markdown.xml",
+        "lib/net9.0-windows7.0/Syncfusion.Markdown.dll",
+        "lib/net9.0-windows7.0/Syncfusion.Markdown.xml",
+        "lib/net9.0/Syncfusion.Markdown.dll",
+        "lib/net9.0/Syncfusion.Markdown.xml",
+        "lib/netstandard2.0/Syncfusion.Markdown.dll",
+        "lib/netstandard2.0/Syncfusion.Markdown.xml",
+        "lib/uap10.0/Syncfusion.Markdown.dll",
+        "lib/uap10.0/Syncfusion.Markdown.xml",
+        "syncfusion.markdown.31.1.23.nupkg.sha512",
+        "syncfusion.markdown.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.MetafileRenderer.Net.Core/31.1.23": {
+      "sha512": "SdzR5p9oTRacshCs3Zn/Oul4WgjAR8fvnBd6TRcPmRqlEBIp5DDrVbxbYaSWdGl1oz9tydL/z/ZRB1T+XkttMw==",
+      "type": "package",
+      "path": "syncfusion.metafilerenderer.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0/Syncfusion.MetafileRenderer.Portable.dll",
+        "lib/net8.0/Syncfusion.MetafileRenderer.Portable.xml",
+        "lib/net9.0/Syncfusion.MetafileRenderer.Portable.dll",
+        "lib/net9.0/Syncfusion.MetafileRenderer.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.MetafileRenderer.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.MetafileRenderer.Portable.xml",
+        "syncfusion.metafilerenderer.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.metafilerenderer.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.OfficeChart.Net.Core/31.1.23": {
+      "sha512": "4+IgB7j/iVEYXMTVlaItNGJe8Ik+IKHT8ivdpwjceWVzrzKvDAnGDDsPRIlw4zHFA+/w8V9TN4vGZito1xM+4g==",
+      "type": "package",
+      "path": "syncfusion.officechart.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net8.0/Syncfusion.OfficeChart.Portable.dll",
+        "lib/net8.0/Syncfusion.OfficeChart.Portable.xml",
+        "lib/net9.0/Syncfusion.OfficeChart.Portable.dll",
+        "lib/net9.0/Syncfusion.OfficeChart.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.xml",
+        "syncfusion.officechart.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.officechart.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Pdf.Imaging.Net.Core/31.1.23": {
+      "sha512": "d7bPAh5hKtNJN1V+76QbR5qdoIWmc6716WCYxm9CMol/1vixAFFZgpINtjQY3tM35f81WerPJ3l0PqNwlc2eCQ==",
+      "type": "package",
+      "path": "syncfusion.pdf.imaging.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0/Syncfusion.Pdf.Imaging.Portable.dll",
+        "lib/net8.0/Syncfusion.Pdf.Imaging.Portable.xml",
+        "lib/net9.0/Syncfusion.Pdf.Imaging.Portable.dll",
+        "lib/net9.0/Syncfusion.Pdf.Imaging.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Pdf.Imaging.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Pdf.Imaging.Portable.xml",
+        "syncfusion.pdf.imaging.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.pdf.imaging.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Pdf.Net.Core/31.1.23": {
+      "sha512": "UHh5TeHaT+8ptJW43H53rKM0zoVfmIpGyNLXIovo2IX9dRqWIzMHBWwfdzTRqYzdHRtBty0mUxRpAZp6xwFbJQ==",
+      "type": "package",
+      "path": "syncfusion.pdf.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0/Syncfusion.Pdf.Portable.dll",
+        "lib/net8.0/Syncfusion.Pdf.Portable.xml",
+        "lib/net9.0/Syncfusion.Pdf.Portable.dll",
+        "lib/net9.0/Syncfusion.Pdf.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Pdf.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Pdf.Portable.xml",
+        "syncfusion.pdf.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.pdf.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.SkiaSharpHelper.Net.Core/31.1.23": {
+      "sha512": "WJ0+xdcWAXHQ5DmavyYO38CosGN1oxS07ctbgGgRV7imOvmAtjhFEkA44WeHZO/rVPfxJcf7oPGZEbJ1ztFkQQ==",
+      "type": "package",
+      "path": "syncfusion.skiasharphelper.net.core/31.1.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net8.0/Syncfusion.SkiaSharpHelper.Portable.dll",
+        "lib/net8.0/Syncfusion.SkiaSharpHelper.Portable.xml",
+        "lib/net9.0/Syncfusion.SkiaSharpHelper.Portable.dll",
+        "lib/net9.0/Syncfusion.SkiaSharpHelper.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.SkiaSharpHelper.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.SkiaSharpHelper.Portable.xml",
+        "syncfusion.skiasharphelper.net.core.31.1.23.nupkg.sha512",
+        "syncfusion.skiasharphelper.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "System.Text.Encoding.CodePages/4.4.0": {
+      "sha512": "6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/de/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/es/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/fr/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/it/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ja/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ko/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ru/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hans/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hant/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "ref/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "system.text.encoding.codepages.4.4.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 8.0.10",
+      "Syncfusion.DocIORenderer.Net.Core >= 31.1.23",
+      "Syncfusion.EJ2.WordEditor.AspNet.Core >= 31.1.23"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ManoMurugan\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "d:\\Documentation\\export sample\\WordEditorServices (2)\\WordEditorServices\\WordEditorServices.csproj",
+      "projectName": "WordEditorServices",
+      "projectPath": "d:\\Documentation\\export sample\\WordEditorServices (2)\\WordEditorServices\\WordEditorServices.csproj",
+      "packagesPath": "C:\\Users\\ManoMurugan\\.nuget\\packages\\",
+      "outputPath": "d:\\Documentation\\export sample\\WordEditorServices (2)\\WordEditorServices\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ManoMurugan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.syncfusion.com/YOUR-REAL-KEY/nuget": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "target": "Package",
+            "version": "[8.0.10, )"
+          },
+          "Syncfusion.DocIORenderer.Net.Core": {
+            "target": "Package",
+            "version": "[31.1.23, )"
+          },
+          "Syncfusion.EJ2.WordEditor.AspNet.Core": {
+            "target": "Package",
+            "version": "[31.1.23, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.110/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
