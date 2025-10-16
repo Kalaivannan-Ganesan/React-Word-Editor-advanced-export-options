@@ -4,7 +4,6 @@ import { DocumentEditorContainerComponent , Ribbon } from '@syncfusion/ej2-react
 import "./index.css";
 DocumentEditorContainerComponent.Inject(Ribbon);
 let hostUrl = "http://localhost:5257/api/documenteditor/";
-// tslint:disable:max-line-length
 const Exporting = () => {
     const container = useRef(null);
     const defaultSFDT = `{
@@ -23,14 +22,14 @@ const Exporting = () => {
 
     useEffect(() => {
         if (container.current) {
-        container.current.documentEditor.open(defaultSFDT); // Empty document
-        container.current.documentEditor.documentName = 'Exporting';
+        container.current.documentEditor.open(defaultSFDT); 
+        container.current.documentEditor.documentName = 'Getting Started';
         container.current.documentEditor.focusIn();
         }
     }, []);
     
     
-    // Ribbon File tab Export menu (for toolbarMode: 'Ribbon')
+    // Ribbon File tab Export menu
     const ribbonExportItems = [
         { text: 'Word Document (*.docx)', id: 'docx' },
         { text: 'Syncfusion Document Text (*.sfdt)', id: 'sfdt' },
@@ -49,7 +48,7 @@ const Exporting = () => {
         { text: 'Export', id: 'export', iconCss: 'e-icons e-export', items: ribbonExportItems },
     ];
 
-    // Common export handler used by toolbar (ListView) and Ribbon menu
+    // Common export handler used by Ribbon menu
     const handleExportById = (value) => {
         switch (value) {
             case 'docx':
@@ -143,7 +142,7 @@ const Exporting = () => {
                     <DocumentEditorContainerComponent
                         id="container"
                         ref={container}
-                        // style={{ display: 'block' }}
+                        style={{ display: 'block' }}
                         height={'690px'}
                         toolbarMode="Ribbon" 
                         ribbonLayout="Classic"

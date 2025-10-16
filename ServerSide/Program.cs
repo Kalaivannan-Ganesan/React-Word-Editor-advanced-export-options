@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Syncfusion.Licensing;
 
-namespace EJ2DocumentEditorServer
+namespace WordEditorServices
 {
     public class Program
     {

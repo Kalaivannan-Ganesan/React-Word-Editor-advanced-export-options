@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using System.Net.Http;
-using System.IO;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Syncfusion.EJ2.DocumentEditor;
 using WDocument = Syncfusion.DocIO.DLS.WordDocument;
 using WFormatType = Syncfusion.DocIO.FormatType;
@@ -14,22 +7,38 @@ using SkiaSharp;
 using BitMiracle.LibTiff.Classic;
 using Syncfusion.DocIORenderer;
 using Syncfusion.Pdf;
-using System.Diagnostics;
-using System.Text;
-using EJ2DocumentEditorServer;
 
-namespace SyncfusionDocument.Controllers
+namespace WordEditorServices.Controllers
 {
     [Route("api/[controller]")]
+    /// <summary>
+    /// API controller providing import and export services for Syncfusion DocumentEditor.
+    /// Supports loading Word formats to JSON and exporting JSON back to various file formats, including PDF.
+    /// </summary>
     public class DocumentEditorController : Controller
     {
+        /// <summary>
+        /// Provides information about the web hosting environment.
+        /// </summary>
         private readonly IWebHostEnvironment  _hostingEnvironment;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DocumentEditorController"/> class.
+        /// </summary>
+        /// <param name="hostingEnvironment">The ASP.NET Core hosting environment.</param>
         public DocumentEditorController(IWebHostEnvironment  hostingEnvironment)
         {
             _hostingEnvironment = hostingEnvironment;
         }
 
+        /// <summary>
+        /// Imports an uploaded Word document and converts it to DocumentEditor JSON format.
+        /// </summary>
+        /// <param name="data">Form data containing the uploaded file in <see cref="IFormCollection.Files"/>.</param>
+        /// <returns>Document content serialized as JSON string, or null when no file is uploaded.</returns>
+        /// <remarks>
+        /// Metafile and TIFF images in the document are handled via <see cref="OnMetafileImageParsed(object, MetafileImageParsedEventArgs)"/>.
+        /// </remarks>
         [AcceptVerbs("Post")]
         [HttpPost]
         [EnableCors("AllowAllOrigins")]
@@ -56,7 +65,11 @@ namespace SyncfusionDocument.Controllers
             return json;
         }
 
-        //Converts Metafile to raster image.
+        /// <summary>
+        /// Handles image parsing during import to convert metafiles (EMF/WMF) or TIFFs to raster streams.
+        /// </summary>
+        /// <param name="sender">The event source.</param>
+        /// <param name="args">Event arguments describing the encountered image.</param>
         private static void OnMetafileImageParsed(object sender, MetafileImageParsedEventArgs args)
         {
             if (args.IsMetafile)
@@ -73,7 +86,11 @@ namespace SyncfusionDocument.Controllers
             }
         }
 
-        // Converting Tiff to Png image using Bitmiracle https://www.nuget.org/packages/BitMiracle.LibTiff.NET
+        /// <summary>
+        /// Converts a TIFF image stream to a PNG image stream using BitMiracle.LibTiff and SkiaSharp.
+        /// </summary>
+        /// <param name="tiffStream">Input TIFF stream.</param>
+        /// <returns>A memory stream containing PNG image data.</returns>
         private static MemoryStream TiffToPNG(Stream tiffStream)
         {
             MemoryStream imageStream = new MemoryStream();
@@ -135,6 +152,14 @@ namespace SyncfusionDocument.Controllers
         }
 
 
+        /// <summary>
+        /// Converts a metafile stream (EMF/WMF) to a raster image stream.
+        /// </summary>
+        /// <param name="ImageStream">Metafile input stream.</param>
+        /// <returns>Raster image stream. Current implementation returns a fallback image.</returns>
+        /// <remarks>
+        /// Replace this method with a real metafile-to-raster conversion if needed.
+        /// </remarks>
         private static Stream ConvertMetafileToRasterImage(Stream ImageStream)
         {
             //Here we are loading a default raster image as fallback.
@@ -143,6 +168,11 @@ namespace SyncfusionDocument.Controllers
             //To do : Write your own logic for converting metafile to raster image using any third-party image converter(Syncfusion doesn't provide any image converter).
         }
 
+        /// <summary>
+        /// Gets an embedded resource stream by file name from the DocIO assembly.
+        /// </summary>
+        /// <param name="fileName">The resource file name (with extension).</param>
+        /// <returns>The matching embedded resource stream, if found; otherwise null.</returns>
         private static Stream GetManifestResourceStream(string fileName)
         {
             System.Reflection.Assembly execAssembly = typeof(WDocument).Assembly;
@@ -159,12 +189,22 @@ namespace SyncfusionDocument.Controllers
         }
 
         
+        /// <summary>
+        /// Health endpoint to verify controller availability.
+        /// </summary>
+        /// <returns>Example string array.</returns>
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
+        /// <summary>
+        /// Maps a file extension to Syncfusion DocumentEditor <see cref="FormatType"/>.
+        /// </summary>
+        /// <param name="format">File extension beginning with a dot (e.g., .docx).</param>
+        /// <returns>The corresponding <see cref="FormatType"/>.</returns>
+        /// <exception cref="NotSupportedException">Thrown when the extension is not supported.</exception>
         internal static FormatType GetFormatType(string format)
         {
             if (string.IsNullOrEmpty(format))
@@ -191,6 +231,13 @@ namespace SyncfusionDocument.Controllers
                     throw new NotSupportedException("EJ2 DocumentEditor does not support this file format.");
             }
         }
+
+        /// <summary>
+        /// Maps a file extension to DocIO <see cref="Syncfusion.DocIO.FormatType"/>.
+        /// </summary>
+        /// <param name="format">File extension beginning with a dot (e.g., .docx).</param>
+        /// <returns>The corresponding DocIO <see cref="Syncfusion.DocIO.FormatType"/>.</returns>
+        /// <exception cref="NotSupportedException">Thrown when the extension is not supported.</exception>
         internal static WFormatType GetWFormatType(string format)
         {
             if (string.IsNullOrEmpty(format))
@@ -226,6 +273,11 @@ namespace SyncfusionDocument.Controllers
             }
         }
 
+        /// <summary>
+        /// Returns the file extension from the provided file name.
+        /// </summary>
+        /// <param name="name">The file name.</param>
+        /// <returns>The extension including the leading dot.</returns>
         private string RetrieveFileType(string name)
         {
             int index = name.LastIndexOf('.');
@@ -234,13 +286,30 @@ namespace SyncfusionDocument.Controllers
             return format;
         }
 
+        /// <summary>
+        /// Parameters for exporting a DocumentEditor document.
+        /// </summary>
         public class SaveParameter
         {
+            /// <summary>
+            /// Document content in DocumentEditor JSON format.
+            /// </summary>
             public string Content { get; set; }
+            /// <summary>
+            /// The desired output file name (with extension).
+            /// </summary>
             public string FileName { get; set; }
+            /// <summary>
+            /// Optional explicit output format (extension). If omitted, derived from <see cref="FileName"/>.
+            /// </summary>
             public string Format { get; set; }
         }
 
+        /// <summary>
+        /// Exports DocumentEditor JSON content to the specified file format.
+        /// </summary>
+        /// <param name="data">Export parameters including content, file name, and format.</param>
+        /// <returns>A file stream result containing the converted document.</returns>
         [AcceptVerbs("Post")]
         [HttpPost]
         [EnableCors("AllowAllOrigins")]
@@ -265,6 +334,14 @@ namespace SyncfusionDocument.Controllers
             }
             return SaveDocument(document, format, fileName);
         }
+
+        /// <summary>
+        /// Saves a DocIO document to the requested format and returns it as a downloadable file.
+        /// </summary>
+        /// <param name="document">The DocIO document to save.</param>
+        /// <param name="format">Target file extension beginning with a dot (e.g., .docx, .pdf).</param>
+        /// <param name="fileName">Download file name.</param>
+        /// <returns>FileStreamResult containing the saved document.</returns>
         private FileStreamResult SaveDocument(WDocument document, string format, string fileName)
         {
             Stream stream = new MemoryStream();
