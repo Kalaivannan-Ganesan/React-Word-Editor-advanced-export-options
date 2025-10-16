@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { DocumentEditorContainerComponent , Ribbon } from '@syncfusion/ej2-react-documenteditor';
 import "./index.css";
 DocumentEditorContainerComponent.Inject(Ribbon);
+// Add the Service URL for server-dependent features
 let hostUrl = "http://localhost:5257/api/documenteditor/";
 const Exporting = () => {
     const container = useRef(null);
@@ -46,6 +47,7 @@ const Exporting = () => {
         'New',
         'Open',
         { text: 'Export', id: 'export', iconCss: 'e-icons e-export', items: ribbonExportItems },
+        'Print',
     ];
 
     // Common export handler used by Ribbon menu

@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="31.1.23" />
-    <PackageReference Include="Syncfusion.EJ2.WordEditor.AspNet.Core" Version="31.1.23" />
+    <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="*" />
+    <PackageReference Include="Syncfusion.EJ2.WordEditor.AspNet.Core" Version="*" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.10" />
   </ItemGroup>
 </Project>
