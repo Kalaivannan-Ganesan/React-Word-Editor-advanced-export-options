@@ -1,14 +1,14 @@
-# Seamless Document Sharing with Export Options in Syncfusion Word Editor 
+# Advanced Export Options in React DOCX Editor 
 
-This repository demonstrates how to export documents in various formats using the Syncfusion React Word Document Editor (also known as the Word Processor). Users can create, review, and securely share documents, then export them to DOCX, TXT, or SFDT formats for archiving and cross-department workflows. It is designed for enterprise scenarios that require consistency, auditability, and a role-aware user experience.
+This repository demonstrates how to export documents in various formats using the Syncfusion React DOCX Editor. Users can create, review, and securely share documents, then export them to DOCX, TXT, or SFDT formats for archiving and cross-department workflows. 
 
  # Resources 
 
-- **Product page:**   [Syncfusion® React Word Processor](https://www.syncfusion.com/docx-editor-sdk/react-docx-editor) 
+- **Product page:**   [Syncfusion® React DOCX Editor](https://www.syncfusion.com/docx-editor-sdk/react-docx-editor) 
 
-- **Documentation:**   [Syncfusion® Word Processor](https://help.syncfusion.com/document-processing/word/word-processor/react/getting-started) 
+- **Documentation:**   [Syncfusion® React DOCX Editor](https://help.syncfusion.com/document-processing/word/word-processor/react/getting-started) 
 
-- **Online demo:**   [Syncfusion® Word Processor - Demo](https://document.syncfusion.com/#/docx-editor-sdk) 
+- **Online demo:**   [Syncfusion® React DOCX Editor - Demo](https://document.syncfusion.com/#/docx-editor-sdk) 
 
 # Support and feedback 
 
