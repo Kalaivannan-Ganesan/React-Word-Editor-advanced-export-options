@@ -12,7 +12,7 @@ namespace WordEditorServices.Controllers
 {
     [Route("api/[controller]")]
     /// <summary>
-    /// API controller providing import and export services for Syncfusion DocumentEditor.
+    /// API controller providing import and export services for Syncfusion Document Editor.
     /// Supports loading Word formats to JSON and exporting JSON back to various file formats, including PDF.
     /// </summary>
     public class DocumentEditorController : Controller
@@ -32,13 +32,10 @@ namespace WordEditorServices.Controllers
         }
 
         /// <summary>
-        /// Imports an uploaded Word document and converts it to DocumentEditor JSON format.
+        /// Imports an uploaded Word document and converts it to Document Editor JSON format.
         /// </summary>
         /// <param name="data">Form data containing the uploaded file in <see cref="IFormCollection.Files"/>.</param>
         /// <returns>Document content serialized as JSON string, or null when no file is uploaded.</returns>
-        /// <remarks>
-        /// Metafile and TIFF images in the document are handled via <see cref="OnMetafileImageParsed(object, MetafileImageParsedEventArgs)"/>.
-        /// </remarks>
         [AcceptVerbs("Post")]
         [HttpPost]
         [EnableCors("AllowAllOrigins")]
@@ -169,7 +166,7 @@ namespace WordEditorServices.Controllers
         }
 
         /// <summary>
-        /// Gets an embedded resource stream by file name from the DocIO assembly.
+        /// Gets an embedded resource stream by file name.
         /// </summary>
         /// <param name="fileName">The resource file name (with extension).</param>
         /// <returns>The matching embedded resource stream, if found; otherwise null.</returns>
@@ -200,7 +197,7 @@ namespace WordEditorServices.Controllers
         }
 
         /// <summary>
-        /// Maps a file extension to Syncfusion DocumentEditor <see cref="FormatType"/>.
+        /// Maps a file extension to Syncfusion Document Editor <see cref="FormatType"/>.
         /// </summary>
         /// <param name="format">File extension beginning with a dot (e.g., .docx).</param>
         /// <returns>The corresponding <see cref="FormatType"/>.</returns>
@@ -208,7 +205,7 @@ namespace WordEditorServices.Controllers
         internal static FormatType GetFormatType(string format)
         {
             if (string.IsNullOrEmpty(format))
-                throw new NotSupportedException("EJ2 DocumentEditor does not support this file format.");
+                throw new NotSupportedException("EJ2 Document Editor does not support this file format.");
             switch (format.ToLower())
             {
                 case ".dotx":
@@ -228,7 +225,7 @@ namespace WordEditorServices.Controllers
                 case ".html":
                     return FormatType.Html;
                 default:
-                    throw new NotSupportedException("EJ2 DocumentEditor does not support this file format.");
+                    throw new NotSupportedException("EJ2 Document Editor does not support this file format.");
             }
         }
 
@@ -241,7 +238,7 @@ namespace WordEditorServices.Controllers
         internal static WFormatType GetWFormatType(string format)
         {
             if (string.IsNullOrEmpty(format))
-                throw new NotSupportedException("EJ2 DocumentEditor does not support this file format.");
+                throw new NotSupportedException("EJ2 Document Editor does not support this file format.");
             switch (format.ToLower())
             {
                 case ".dotx":
@@ -269,7 +266,7 @@ namespace WordEditorServices.Controllers
                 case ".md":
                     return WFormatType.Markdown;
                 default:
-                    throw new NotSupportedException("EJ2 DocumentEditor does not support this file format.");
+                    throw new NotSupportedException("EJ2 Document Editor does not support this file format.");
             }
         }
 
@@ -287,12 +284,12 @@ namespace WordEditorServices.Controllers
         }
 
         /// <summary>
-        /// Parameters for exporting a DocumentEditor document.
+        /// Parameters for exporting a Document Editor document.
         /// </summary>
         public class SaveParameter
         {
             /// <summary>
-            /// Document content in DocumentEditor JSON format.
+            /// Document content in Document Editor JSON format.
             /// </summary>
             public string Content { get; set; }
             /// <summary>
@@ -306,7 +303,7 @@ namespace WordEditorServices.Controllers
         }
 
         /// <summary>
-        /// Exports DocumentEditor JSON content to the specified file format.
+        /// Exports Document Editor JSON content to the specified file format.
         /// </summary>
         /// <param name="data">Export parameters including content, file name, and format.</param>
         /// <returns>A file stream result containing the converted document.</returns>
