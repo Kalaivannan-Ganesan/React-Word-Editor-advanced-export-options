@@ -1,14 +1,15 @@
-# Advanced Export Options in React DOCX Editor 
+# Advanced Export Options in React DOCX Editor (Document Editor)
 
-This repository demonstrates how to export documents in various formats using the Syncfusion React DOCX Editor. Users can create, review, and securely share documents, then export them to DOCX, TXT, or SFDT formats for archiving and cross-department workflows. 
+This repository demonstrates how to export documents in various formats using the Syncfusion<sup style="font-size:70%">&reg;</sup> [React DOCX Editor](https://www.syncfusion.com/docx-editor-sdk/react-docx-editor?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples) (Document Editor). Users can create, review, and securely share documents, then export them to DOCX, TXT, or SFDT formats for archiving and cross-department workflows. 
 
- # Resources 
+ # Resources
 
-- **Product page:**   [Syncfusion® React DOCX Editor](https://www.syncfusion.com/docx-editor-sdk/react-docx-editor) 
+- **Product page:**   [Syncfusion® React DOCX Editor](https://www.syncfusion.com/docx-editor-sdk/react-docx-editor?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples) 
 
-- **Documentation:**   [Syncfusion® React DOCX Editor](https://help.syncfusion.com/document-processing/word/word-processor/react/getting-started) 
+- **Documentation:**   [Syncfusion® React DOCX Editor - Documentation](https://help.syncfusion.com/document-processing/word/word-processor/react/overview?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples) 
 
-- **Online demo:**   [Syncfusion® React DOCX Editor - Demo](https://document.syncfusion.com/#/docx-editor-sdk) 
+- **Online demo:**   [Syncfusion® React DOCX Editor - Online demo](https://document.syncfusion.com/demos/docx-editor/react/#/tailwind3/document-editor/default?utm_source=github&utm_medium=listing&utm_campaign=github-github-documenteditor-examples) 
+
 
 # Support and feedback 
 
